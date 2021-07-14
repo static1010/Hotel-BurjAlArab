@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>форма за резервация</title>
+    <link rel="shortcut icon" href="images/title32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="section-background-form">
+
+        <div class="containeS">
+            <div class="container-time">
+                <h2 class="headings"> Time open</h2>
+                <h3 class="heading-days"> monday-friday</h3>
+                <p>7am - 11am (breakfast)</p>
+                <p>11am - 10pm (lunch/dinner)</p>
+
+                <h3 class="heading-days">Saturday and sunday</h3>
+                <p>9am - 1am (breakfast)</p>
+                <p> 11am - 10pm (lunch/dinner)</p>
+
+                <hr>
+
+                <h4 class="heading-phone">Call Us: +359 878 208 373</h4>
+            </div>
+
+            <div class="container-form">
+                <form action="#"></form>
+                <h2 class="heading heading-yellow"> Reservation Online</h2>
+
+                <div class="form-field">
+                    <p>Your Name</p>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="form-field">
+                    <p>Your email</p>
+                    <input type="email" placeholder="Your email">
+                </div>
+                <div class="form-field">
+                    <p>Date</p>
+                    <input type="date">
+                </div>
+                <div class="form-field">
+                    <p>Time</p>
+                    <input type="time">
+                </div>
+                <div class="form-field">
+                    <p>How many people?</p>
+                    <select name="select" id="selected">
+                <option value="1">1 person</option>
+                <option value="2">2 person</option>
+                <option value="3">3 person</option>
+                <option value="4">4 person</option>
+                <option value="5">5 person</option>
+                <option value="5+">5+ person</option>
+            </select>
+                </div>
+                <a href="index2.html" class="btn3 one3" id="neon-btn3">S U B M I T</a>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $('.section-background-form').mousemove(function(e) {
+            var moveX = (e.pageX * -1 / 5);
+            var moveY = (e.pageY * -1 / 5);
+            $(this).css('background-position', moveX + 'px ' +
+                moveY + 'px ')
+        });
+    </script>
+
+
+</body>
+
+</html>
